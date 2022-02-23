@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+
+.download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  padding: 0.50rem;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  background: white;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+a p {
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(#2F9BCB, #9371DB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=game.css.map */

@@ -1,0 +1,351 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-ac-c {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-fd-r {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-fw-w {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #2f9bcb;
+  background: radial-gradient(circle, #2f9bcb 0%, #9371db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f9bcb",endColorstr="#9371db",GradientType=1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: white;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #81d4fa;
+}
+
+/*header*/
+.container-header {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container-header .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.container-header .logo-container {
+  margin-top: 2rem;
+}
+
+.container-header .head-q {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 1.40rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.container-header .author {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+}
+
+.current-project {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1000px;
+  height: 150px;
+  background: white;
+  line-height: 26px;
+  border-radius: 40px;
+  z-index: 99;
+}
+
+.current-project .title-project {
+  margin-top: 3.25rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 25.6px;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  background: #2F9BCB;
+  background: radial-gradient(circle farthest-side at top left, #2F9BCB 0%, #9371DB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.current-project button {
+  color: white;
+  background-image: linear-gradient(45deg, #2F9BCB, #9371DB);
+  border: none;
+  font-size: 1px;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 3.25rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.current-project button button:hover {
+  background-image: linear-gradient(45deg, #2F9BCB, #9371DB);
+}
+
+@media screen and (max-width: 1000px) {
+  .current-project {
+    max-width: 750px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .current-project {
+    max-width: 550px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .current-project {
+    max-width: 320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.about-container {
+  margin-top: 6rem;
+  color: white;
+  text-align: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.about-container .title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.about-container .desc {
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-container a {
+  text-decoration: none;
+  background: white;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1rem;
+  color: #2F9BCB;
+  cursor: pointer;
+}
+
+.tool-section {
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.tool-section .tools {
+  background: white;
+  width: 300px;
+  height: 254;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.tool-section .icon {
+  width: 20%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.tool-section .title {
+  color: mediumpurple;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.tool-section .logo-name {
+  color: #718096;
+  margin-right: 4.25rem;
+  margin-bottom: 2rem;
+}
+
+.tool-section .logo-icon {
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  margin-top: 6rem;
+}
+
+.projects-container .title-projects {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.projects-container .desc {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/*projects cards*/
+.card-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-section .card {
+  background: white;
+  border-radius: 25px;
+  width: 300px;
+  height: 170px;
+  text-align: center;
+  margin-top: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.card-section .title {
+  color: mediumpurple;
+  text-transform: uppercase;
+}
+
+.card-section .desc {
+  color: #718096;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-section .hyperlink {
+  color: mediumpurple;
+  text-decoration: none;
+}
+
+.card-section .hyperlink-development {
+  color: mediumpurple;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 4rem;
+}
+
+.footer .copyright {
+  color: white;
+}
+
+.footer .color {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

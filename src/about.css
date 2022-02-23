@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Poppins&family=Roboto&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: #2f9bcb;
+  background: radial-gradient(circle, #2f9bcb 0%, #9371db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f9bcb",endColorstr="#9371db",GradientType=1);
+  font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: white;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #81d4fa;
+}
+
+a,
+a label {
+  cursor: pointer;
+}
+
+.title {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: -6rem;
+}
+
+.title1 {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.container-header {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container-header .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.container-header .welcome p {
+  position: relative;
+  bottom: 50px;
+}
+
+.nav {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0 0 100px 100px;
+  z-index: -555;
+}
+
+.nav .logo {
+  margin-left: 12rem;
+  margin-bottom: 2rem;
+  color: #9371DB;
+  margin-top: 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  margin-right: 12rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.nav ul a {
+  color: #2F9BCB;
+}
+
+.nav .menu {
+  display: none;
+}
+
+.personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.personal .item0 {
+  background: white;
+  max-width: 840px;
+  border-radius: 25px;
+}
+
+.personal .item0 h1 {
+  text-transform: uppercase;
+  color: #9371DB;
+}
+
+.personal .item0 p {
+  color: #78869b;
+  font-weight: 500;
+}
+
+.personal .item0 h1, .personal .item0 p {
+  margin: 1rem;
+}
+
+.personal .item {
+  background: white;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.personal .item h1 {
+  text-transform: uppercase;
+  color: #9371DB;
+}
+
+.personal .item p {
+  color: #78869b;
+  font-weight: 500;
+}
+
+.personal .item h1, .personal .item p {
+  margin: 1rem;
+}
+
+.itemMusic {
+  max-width: 840px;
+  background: white;
+  border-radius: 25px;
+}
+
+.itemMusic h1 {
+  text-transform: uppercase;
+  color: #9371DB;
+}
+
+.itemMusic p {
+  color: #78869b;
+  font-weight: 500;
+}
+
+.itemMusic h1, .itemMusic p {
+  margin: 1rem;
+}
+
+.itemMusic .spotify {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.programming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8rem;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.programming h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.programming .item0 {
+  background: white;
+  width: 840px;
+  border-radius: 25px;
+}
+
+.programming .item0 h1 {
+  text-transform: uppercase;
+  color: #9371DB;
+}
+
+.programming .item0 p {
+  color: #78869b;
+  font-weight: 500;
+}
+
+.programming .item0 h1, .programming .item0 p {
+  margin: 1rem;
+}
+
+.programming .item {
+  background: white;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.programming .item h1 {
+  text-transform: uppercase;
+  color: #9371DB;
+}
+
+.programming .item p {
+  color: #78869b;
+  font-weight: 500;
+}
+
+.programming .item h1, .programming .item p {
+  margin: 1rem;
+}
+
+.itemMusic {
+  width: 840px;
+  background: white;
+  border-radius: 25px;
+}
+
+.itemMusic h1 {
+  text-transform: uppercase;
+  color: #9371DB;
+}
+
+.itemMusic p {
+  color: #78869b;
+  font-weight: 500;
+}
+
+.itemMusic h1, .itemMusic p {
+  margin: 1rem;
+}
+
+.itemMusic .spotify {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer .copyright {
+  color: white;
+}
+
+.footer .color {
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .personal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .personal h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  .personal .item0 {
+    background: white;
+    max-width: 400px;
+    border-radius: 25px;
+  }
+  .personal .item0 h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .personal .item0 p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .personal .item0 h1, .personal .item0 p {
+    margin: 1rem;
+  }
+  .personal .item {
+    background: white;
+    width: 400px;
+    border-radius: 25px;
+  }
+  .personal .item h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .personal .item p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .personal .item h1, .personal .item p {
+    margin: 1rem;
+  }
+  .itemMusic {
+    max-width: 400px;
+    background: white;
+    border-radius: 25px;
+  }
+  .itemMusic h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .itemMusic p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .itemMusic h1, .itemMusic p {
+    margin: 1rem;
+  }
+  .itemMusic .spotify {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .programming {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 8rem;
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .programming h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  .programming .item0 {
+    background: white;
+    width: 400px;
+    border-radius: 25px;
+  }
+  .programming .item0 h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .programming .item0 p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .programming .item0 h1, .programming .item0 p {
+    margin: 1rem;
+  }
+  .programming .item {
+    background: white;
+    width: 400px;
+    border-radius: 25px;
+  }
+  .programming .item h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .programming .item p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .programming .item h1, .programming .item p {
+    margin: 1rem;
+  }
+  .itemMusic {
+    width: 400px;
+    background: white;
+    border-radius: 25px;
+  }
+  .itemMusic h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .itemMusic p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .itemMusic h1, .itemMusic p {
+    margin: 1rem;
+  }
+  .itemMusic .spotify {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .personal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .personal h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  .personal .item0 {
+    background: white;
+    max-width: 300px;
+    border-radius: 25px;
+  }
+  .personal .item0 h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .personal .item0 p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .personal .item0 h1, .personal .item0 p {
+    margin: 1rem;
+  }
+  .personal .item {
+    background: white;
+    width: 300px;
+    border-radius: 25px;
+  }
+  .personal .item h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .personal .item p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .personal .item h1, .personal .item p {
+    margin: 1rem;
+  }
+  .itemMusic {
+    max-width: 300px;
+    background: white;
+    border-radius: 25px;
+  }
+  .itemMusic h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .itemMusic p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .itemMusic h1, .itemMusic p {
+    margin: 1rem;
+  }
+  .itemMusic .spotify {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .programming {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 8rem;
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .programming h1 {
+    text-transform: uppercase;
+    color: white;
+  }
+  .programming .item0 {
+    background: white;
+    width: 300px;
+    border-radius: 25px;
+  }
+  .programming .item0 h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .programming .item0 p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .programming .item0 h1, .programming .item0 p {
+    margin: 1rem;
+  }
+  .programming .item {
+    background: white;
+    width: 300px;
+    border-radius: 25px;
+  }
+  .programming .item h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .programming .item p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .programming .item h1, .programming .item p {
+    margin: 1rem;
+  }
+  .itemMusic {
+    width: 300px;
+    background: white;
+    border-radius: 25px;
+  }
+  .itemMusic h1 {
+    text-transform: uppercase;
+    color: #9371DB;
+  }
+  .itemMusic p {
+    color: #78869b;
+    font-weight: 500;
+  }
+  .itemMusic h1, .itemMusic p {
+    margin: 1rem;
+  }
+  .itemMusic .spotify {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 0 0 100px 100px;
+    z-index: -555;
+  }
+  .nav .logo {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    color: #9371DB;
+    margin-top: 2rem;
+  }
+  .nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav .menu {
+    display: block;
+    margin-right: 4rem;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,312 @@
+
+@import"utils";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(47,155,203);
+    background: -moz-radial-gradient(circle, rgba(47,155,203,1) 0%, rgba(147,113,219,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(47,155,203,1) 0%, rgba(147,113,219,1) 100%);
+    background: radial-gradient(circle, rgba(47,155,203,1) 0%, rgba(147,113,219,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f9bcb",endColorstr="#9371db",GradientType=1);
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: white;
+    
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #81d4fa;
+}
+
+/*header*/
+.container-header {
+   
+    max-width: 1000px;
+    margin: auto;
+    
+    
+ 
+ 
+
+
+
+    
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-size: 2.5em;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        line-height: 45px;
+        text-transform: uppercase;
+    }
+
+    .logo-container {
+        margin-top: 2rem;
+    }
+
+    .head-q {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-size: 1.40rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+
+    .author {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.10em;
+        text-transform: uppercase;
+        margin-bottom: 8rem;
+    }
+
+}
+
+
+.current-project {
+    justify-content: space-between; 
+    max-width: 1000px;
+    height: 150px;
+    
+    background: white;
+    line-height: 26px;
+    border-radius: 40px;
+    z-index: 99;
+
+    .title-project {
+        margin-top: 3.25rem;
+        margin-left: 2rem;
+        text-decoration: none;
+        font-size: 25.6px;
+        font-weight: 600;
+        letter-spacing: 0.10em;
+        text-transform: uppercase;
+        background: #2F9BCB;
+background: -webkit-radial-gradient(circle farthest-side at top left, #2F9BCB 0%, #9371DB 100%);
+background: -moz-radial-gradient(circle farthest-side at top left, #2F9BCB 0%, #9371DB 100%);
+background: radial-gradient(circle farthest-side at top left, #2F9BCB 0%, #9371DB 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+        
+        
+    }
+
+        button {
+            color: white;
+            background-image: linear-gradient(45deg, #2F9BCB, #9371DB);
+            border: none;
+            font-size: 1px;
+            width: 100px;
+            height: 50px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 400; 
+            margin-top: 3.25rem;
+            margin-right: 2rem;
+            cursor: pointer;
+
+            button:hover {
+                background-image: linear-gradient(45deg, #2F9BCB, #9371DB);
+            }
+        }
+        
+    
+}
+@media screen and (max-width: 1000px) {
+    .current-project {
+        max-width: 750px;
+        margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .current-project {
+        max-width: 550px;
+        margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    .current-project {
+        max-width: 320px;
+        margin: auto;
+        display: flex;
+        
+    }
+  }
+
+  
+
+.about-container {
+    margin-top: 6rem;
+    color: white;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    .title {
+        
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+    }
+    .desc {
+        
+        font-weight: 400;
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    a {
+        text-decoration: none;
+        background: white;
+        font-size: 1.5rem;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1rem;
+        color: #2F9BCB;
+        
+        cursor: pointer;
+    }
+    
+}
+
+.tool-section {
+    gap: 2rem;
+    justify-content: center;
+    text-transform: uppercase;
+    
+    .tools {
+        background: white;
+        width: 300px;
+        height: 254;
+        text-align: center;
+        border-radius: 25px;
+        margin-top: 1rem;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+
+    .icon {
+        width: 20%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .title {
+        color: mediumpurple;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase
+
+        
+    }
+    .logo-name {
+        color: #718096;
+        margin-right: 4.25rem;
+        margin-bottom: 2rem;
+    }
+    .logo-icon {
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+}     
+.projects-container {
+    margin-top: 6rem;
+
+    .title-projects {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .desc {
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+    
+}
+    
+
+
+/*projects cards*/
+.card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+
+    .card {
+        background: white;
+        border-radius: 25px;
+        width: 300px;
+        height: 170px;
+        text-align: center;
+        
+        margin-top: 1rem;
+	    flex-grow: 0;
+	    flex-shrink: 0;
+    }
+
+    .title {
+        color: mediumpurple;
+        text-transform: uppercase;
+    }
+    .desc {
+        color: #718096;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .hyperlink {
+        
+        color: mediumpurple;
+        text-decoration: none;
+    }
+    .hyperlink-development {
+        
+        color: mediumpurple;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    margin-top: 4rem;
+    .copyright {
+        color:white;
+    }
+    .color {
+        color: white;
+    }
+}
