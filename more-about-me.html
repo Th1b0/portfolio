@@ -12,18 +12,32 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <!--Navigation bar-->
   <div class="nav">
     <a class='logo' href="./more-about-me.html">Kuijpers<br>Thibo</a>
-
+    <i class="fa-solid menu fa-bars" id="open"></i>
     <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a clas="nav-item" href="./index.html">Home</a></li>
+      <li><a clas="nav-item" href="./more-about-me.html">About</a></li>
+      <li><a clas="nav-item" href="./projects.html">Projects</a></li>
+      <li><a clas="nav-item" href="./contact.html">Contact</a></li>
     </ul>
   </div>
 
+
+<div class="display" id="menu">
+  <i id="close" class="fa-solid close fa-x"></i>
+  <ul>
+    <li><a clas="nav-item" href="./index.html">Home</a></li>
+      <li><a clas="nav-item" href="./more-about-me.html">About</a></li>
+      <li><a clas="nav-item" href="./projects.html">Projects</a></li>
+      <li><a clas="nav-item" href="./contact.html">Contact</a></li>
+  </ul>
+</div>
+  
+
+
+  <!--Hero Section-->
   <div class="container-header">
     <div class="welcome">
       <h1>
@@ -32,7 +46,7 @@
       <p>here i talk about myself personally and some info about how i started programming</p>
     </div>
 
-
+    <!--Personal Info-->
     <h1 class="title1">
       Personal info
     </h1>
@@ -40,7 +54,7 @@
       
       <div class="item0">
         <h1>General Info</h1>
-        <p>am 16 years old and I live in Belgium - Flanders. I still go to high school where I study economics, but all the time after school I spend on Web development or programming in general, also I spend some time on 3d modeling and game development.</p>
+        <p>I am 16 years old and I live in Belgium - Flanders. I still go to high school where I study economics, but all the time after school I spend on Web development or programming in general, also I spend some time on 3d modeling and game development.</p>
       </div>
       <div class="item">
         <h1>
@@ -75,6 +89,8 @@
       </div>
     </div>
 
+
+    <!--Programming info-->
     <h1 class="title">
       Programming info
     </h1>
@@ -111,6 +127,8 @@
         
       </div>
     </div>
+
+    <!--Footer with fontawsome-->
     <footer class="footer flex flex-fd-c flex-ai-c">
       <div class="social-links">
       <a href="#"><i class="fab color fa-instagram"></i></a>
@@ -124,7 +142,7 @@
       </footer>
 
 
-
+<!--Star animation-->
 </div>
   <div class="animation-wrapper">
     <div class="particle particle-1"></div>
@@ -134,4 +152,7 @@
   </div>
 
 </body>
+<!--Javascript-->
+<script src="./src/js/main.js"></script>
+<script src="./src/js/mobile.js"></script>
 </html>

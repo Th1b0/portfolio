@@ -54,7 +54,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f9bcb",endColorstr="#9371db",GradientType=1);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -70,6 +70,63 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background: #81d4fa;
+}
+
+.nav {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0 0 100px 100px;
+  z-index: -555;
+}
+
+.nav .logo {
+  margin-left: 12rem;
+  margin-bottom: 2rem;
+  color: #9371db;
+  margin-top: 2rem;
+}
+
+.nav .menu {
+  display: none;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  color: #9371db;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  margin-right: 12rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.nav ul a {
+  color: #9371db;
+}
+
+.nav .menu {
+  display: none;
+}
+
+.display {
+  display: none;
 }
 
 /*header*/
@@ -96,7 +153,7 @@ body {
   text-decoration: none;
   text-align: center;
   color: white;
-  font-size: 1.40rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -108,7 +165,7 @@ body {
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 8rem;
 }
@@ -131,17 +188,17 @@ body {
   text-decoration: none;
   font-size: 25.6px;
   font-weight: 600;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: #2F9BCB;
-  background: radial-gradient(circle farthest-side at top left, #2F9BCB 0%, #9371DB 100%);
+  background: #2f9bcb;
+  background: radial-gradient(circle farthest-side at top left, #2f9bcb 0%, #9371db 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .current-project button {
   color: white;
-  background-image: linear-gradient(45deg, #2F9BCB, #9371DB);
+  background-image: linear-gradient(45deg, #2f9bcb, #9371db);
   border: none;
   font-size: 1px;
   width: 100px;
@@ -156,7 +213,7 @@ body {
 }
 
 .current-project button button:hover {
-  background-image: linear-gradient(45deg, #2F9BCB, #9371DB);
+  background-image: linear-gradient(45deg, #2f9bcb, #9371db);
 }
 
 @media screen and (max-width: 1000px) {
@@ -216,7 +273,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   padding: 1rem;
-  color: #2F9BCB;
+  color: #2f9bcb;
   cursor: pointer;
 }
 
@@ -347,5 +404,168 @@ body {
 
 .footer .color {
   color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 0 0 100px 100px;
+    z-index: -555;
+  }
+  .nav .logo {
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    color: #9371db;
+    margin-top: 2rem;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav .menu {
+    margin-right: 6rem;
+    display: block;
+    color: #9371db;
+    font-size: 2rem;
+  }
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300%;
+    width: 50%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  .mobile-menu .close {
+    color: #9371db;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+  }
+  .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 8rem;
+    list-style-type: none;
+    gap: 4rem;
+    z-index: 999;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+  }
+  .mobile-menu ul a {
+    text-decoration: none;
+    color: #9371db;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300%;
+    width: 50%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  .mobile-menu .close {
+    color: #9371db;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 8rem;
+    list-style-type: none;
+    gap: 4rem;
+    z-index: 999;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+  }
+  .mobile-menu ul a {
+    text-decoration: none;
+    color: #9371db;
+  }
+  .nav {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 0 0 100px 100px;
+    z-index: -555;
+  }
+  .nav .logo {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    color: #9371db;
+    margin-top: 2rem;
+  }
+  .nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav .menu {
+    display: block;
+    margin-right: 4rem;
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

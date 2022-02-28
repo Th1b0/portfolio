@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Poppins&family=Roboto&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Poppins&family=Roboto&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
+html,
+body {
+  height: 100vh;
+}
 
 body {
   margin: 0;
   padding: 0;
-  background: rgb(47,155,203);
-  background: -moz-radial-gradient(circle, rgba(47,155,203,1) 0%, rgba(147,113,219,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(47,155,203,1) 0%, rgba(147,113,219,1) 100%);
-  background: radial-gradient(circle, rgba(47,155,203,1) 0%, rgba(147,113,219,1) 100%);
+  background: rgb(47, 155, 203);
+  background: -moz-radial-gradient(circle, rgba(47, 155, 203, 1) 0%, rgba(147, 113, 219, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(47, 155, 203, 1) 0%, rgba(147, 113, 219, 1) 100%);
+  background: radial-gradient(circle, rgba(47, 155, 203, 1) 0%, rgba(147, 113, 219, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f9bcb",endColorstr="#9371db",GradientType=1);
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   background: white;
-  
 }
 
 ::-webkit-scrollbar-track {
@@ -29,26 +32,24 @@ body {
 
 a,
 a label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .title {
   text-transform: uppercase;
-    color: white;
-    text-align: center;
-    margin-top: 8rem;
-    margin-bottom: -6rem;
+  color: white;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: -6rem;
 }
 
 .title1 {
   text-transform: uppercase;
-    color: white;
-    text-align: center;
-    
+  color: white;
+  text-align: center;
 }
 
 .container-header {
-   
   max-width: 1000px;
   margin: auto;
   .welcome {
@@ -68,7 +69,6 @@ a label {
   }
 }
 
-
 .nav {
   background: white;
   display: flex;
@@ -79,27 +79,29 @@ a label {
   .logo {
     margin-left: 12rem;
     margin-bottom: 2rem;
-    color: #9371DB;
+    color: #9371db;
     margin-top: 2rem;
+  }
+  .menu {
+    display: none;
   }
   a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: large;
-    
-    
+    color: #9371db;
   }
   ul {
     display: flex;
     list-style-type: none;
-  
+
     gap: 2rem;
     margin-right: 12rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     a {
-      color: #2F9BCB;
+      color: #9371db;
     }
   }
   .menu {
@@ -107,12 +109,14 @@ a label {
   }
 }
 
+.display {
+  display: none;
+}
+
 .personal {
   display: flex;
   justify-content: center;
 
-  
-  
   gap: 2rem;
   flex-wrap: wrap;
   .item0 {
@@ -121,31 +125,31 @@ a label {
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
-    
-
-    }
+  }
   .item {
     background: white;
     width: 400px;
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
   }
@@ -157,16 +161,16 @@ a label {
   border-radius: 25px;
   h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   p {
     color: #78869b;
     font-weight: 500;
   }
-  h1 , p {
+  h1,
+  p {
     margin: 1rem;
   }
-
 
   .spotify {
     margin: 1rem;
@@ -174,7 +178,6 @@ a label {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-  
   }
 }
 
@@ -184,9 +187,9 @@ a label {
   margin-top: 8rem;
   h1 {
     text-transform: uppercase;
-      color: white;
+    color: white;
   }
-  
+
   gap: 2rem;
   flex-wrap: wrap;
   .item0 {
@@ -195,31 +198,31 @@ a label {
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
-    
-
-    }
+  }
   .item {
     background: white;
     width: 400px;
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
   }
@@ -231,16 +234,16 @@ a label {
   border-radius: 25px;
   h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   p {
     color: #78869b;
     font-weight: 500;
   }
-  h1 , p {
+  h1,
+  p {
     margin: 1rem;
   }
-
 
   .spotify {
     margin: 1rem;
@@ -248,7 +251,6 @@ a label {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-  
   }
 }
 
@@ -256,47 +258,72 @@ a label {
   margin-top: 4rem;
   text-align: center;
   .copyright {
-      color:white;
+    color: white;
   }
   .color {
-      color: white;
+    color: white;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
+  .nav {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 100px 100px;
+    z-index: -555;
+    .logo {
+      margin-left: 6rem;
+      margin-bottom: 2rem;
+      color: #9371db;
+      margin-top: 2rem;
+    }
+    ul {
+      display: none;
+    }
+    .menu {
+      margin-right: 6rem;
+      display: block;
+      color: #9371db;
+      font-size: 2rem;
+    }
+  }
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300%;
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    .close {
+      color: #9371db;
+      align-self: flex-end;
+
+      margin-top: 4rem;
+      margin-right: 4rem;
+      font-size: 1.5rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem;
+      list-style-type: none;
+      gap: 4rem;
+      z-index: 999;
+      text-transform: uppercase;
+      font-size: large;
+      font-weight: 500;
+      a {
+        text-decoration: none;
+        color: #9371db;
+      }
+    }
+  }
   .personal {
     display: flex;
     justify-content: center;
@@ -304,8 +331,7 @@ a label {
       text-transform: uppercase;
       color: white;
     }
-    
-    
+
     gap: 2rem;
     flex-wrap: wrap;
     .item0 {
@@ -314,72 +340,74 @@ a label {
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
-      
-  
-      }
+    }
     .item {
       background: white;
       width: 400px;
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
     }
   }
-  
+
   .itemMusic {
     max-width: 400px;
     background: white;
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
-  
-  
+
     .spotify {
       margin: 1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-    
+      iframe {
+        width: 20%;
+      }
     }
   }
-  
+
   .programming {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
     h1 {
       text-transform: uppercase;
-        color: white;
+      color: white;
     }
-    
+
     gap: 2rem;
     flex-wrap: wrap;
     .item0 {
@@ -388,79 +416,99 @@ a label {
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
-      
-  
-      }
+    }
     .item {
       background: white;
       width: 400px;
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
     }
   }
-  
+
   .itemMusic {
     width: 400px;
     background: white;
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
-  
-  
+
     .spotify {
       margin: 1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-    
     }
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300%;
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    .close {
+      color: #9371db;
+      align-self: flex-end;
+
+      margin-top: 2rem;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 8rem;
+      list-style-type: none;
+      gap: 4rem;
+      z-index: 999;
+      text-transform: uppercase;
+      font-size: large;
+      font-weight: 500;
+      a {
+        text-decoration: none;
+        color: #9371db;
+      }
+    }
+  }
   .personal {
     display: flex;
     justify-content: center;
@@ -468,8 +516,7 @@ a label {
       text-transform: uppercase;
       color: white;
     }
-    
-    
+
     gap: 2rem;
     flex-wrap: wrap;
     .item0 {
@@ -478,72 +525,74 @@ a label {
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
-      
-  
-      }
+    }
     .item {
       background: white;
       width: 300px;
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
     }
   }
-  
+
   .itemMusic {
     max-width: 300px;
     background: white;
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
-  
-  
+
     .spotify {
       margin: 1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-    
+      iframe {
+        width: 100%;
+      }
     }
   }
-  
+
   .programming {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
     h1 {
       text-transform: uppercase;
-        color: white;
+      color: white;
     }
-    
+
     gap: 2rem;
     flex-wrap: wrap;
     .item0 {
@@ -552,60 +601,59 @@ a label {
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
-      
-  
-      }
+    }
     .item {
       background: white;
       width: 300px;
       border-radius: 25px;
       h1 {
         text-transform: uppercase;
-        color: #9371DB;
+        color: #9371db;
       }
       p {
         color: #78869b;
         font-weight: 500;
       }
-      h1 , p {
+      h1,
+      p {
         margin: 1rem;
       }
     }
   }
-  
+
   .itemMusic {
     width: 300px;
     background: white;
     border-radius: 25px;
     h1 {
       text-transform: uppercase;
-      color: #9371DB;
+      color: #9371db;
     }
     p {
       color: #78869b;
       font-weight: 500;
     }
-    h1 , p {
+    h1,
+    p {
       margin: 1rem;
     }
-  
-  
+
     .spotify {
       margin: 1rem;
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
-    
     }
   }
 
@@ -619,7 +667,7 @@ a label {
     .logo {
       margin-left: 4rem;
       margin-bottom: 2rem;
-      color: #9371DB;
+      color: #9371db;
       margin-top: 2rem;
     }
     a {
@@ -627,8 +675,6 @@ a label {
       text-transform: uppercase;
       font-weight: bold;
       font-size: large;
-      
-      
     }
     ul {
       display: none;
@@ -639,5 +685,4 @@ a label {
       font-size: 2rem;
     }
   }
-  
 }

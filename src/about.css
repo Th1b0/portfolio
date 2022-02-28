@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Poppins&family=Roboto&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  height: 100vh;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #2f9bcb;
   background: radial-gradient(circle, #2f9bcb 0%, #9371db 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f9bcb",endColorstr="#9371db",GradientType=1);
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -91,8 +96,12 @@ a label {
 .nav .logo {
   margin-left: 12rem;
   margin-bottom: 2rem;
-  color: #9371DB;
+  color: #9371db;
   margin-top: 2rem;
+}
+
+.nav .menu {
+  display: none;
 }
 
 .nav a {
@@ -100,6 +109,7 @@ a label {
   text-transform: uppercase;
   font-weight: bold;
   font-size: large;
+  color: #9371db;
 }
 
 .nav ul {
@@ -114,10 +124,14 @@ a label {
 }
 
 .nav ul a {
-  color: #2F9BCB;
+  color: #9371db;
 }
 
 .nav .menu {
+  display: none;
+}
+
+.display {
   display: none;
 }
 
@@ -141,7 +155,7 @@ a label {
 
 .personal .item0 h1 {
   text-transform: uppercase;
-  color: #9371DB;
+  color: #9371db;
 }
 
 .personal .item0 p {
@@ -149,7 +163,8 @@ a label {
   font-weight: 500;
 }
 
-.personal .item0 h1, .personal .item0 p {
+.personal .item0 h1,
+.personal .item0 p {
   margin: 1rem;
 }
 
@@ -161,7 +176,7 @@ a label {
 
 .personal .item h1 {
   text-transform: uppercase;
-  color: #9371DB;
+  color: #9371db;
 }
 
 .personal .item p {
@@ -169,7 +184,8 @@ a label {
   font-weight: 500;
 }
 
-.personal .item h1, .personal .item p {
+.personal .item h1,
+.personal .item p {
   margin: 1rem;
 }
 
@@ -181,7 +197,7 @@ a label {
 
 .itemMusic h1 {
   text-transform: uppercase;
-  color: #9371DB;
+  color: #9371db;
 }
 
 .itemMusic p {
@@ -189,7 +205,8 @@ a label {
   font-weight: 500;
 }
 
-.itemMusic h1, .itemMusic p {
+.itemMusic h1,
+.itemMusic p {
   margin: 1rem;
 }
 
@@ -232,7 +249,7 @@ a label {
 
 .programming .item0 h1 {
   text-transform: uppercase;
-  color: #9371DB;
+  color: #9371db;
 }
 
 .programming .item0 p {
@@ -240,7 +257,8 @@ a label {
   font-weight: 500;
 }
 
-.programming .item0 h1, .programming .item0 p {
+.programming .item0 h1,
+.programming .item0 p {
   margin: 1rem;
 }
 
@@ -252,7 +270,7 @@ a label {
 
 .programming .item h1 {
   text-transform: uppercase;
-  color: #9371DB;
+  color: #9371db;
 }
 
 .programming .item p {
@@ -260,7 +278,8 @@ a label {
   font-weight: 500;
 }
 
-.programming .item h1, .programming .item p {
+.programming .item h1,
+.programming .item p {
   margin: 1rem;
 }
 
@@ -272,7 +291,7 @@ a label {
 
 .itemMusic h1 {
   text-transform: uppercase;
-  color: #9371DB;
+  color: #9371db;
 }
 
 .itemMusic p {
@@ -280,7 +299,8 @@ a label {
   font-weight: 500;
 }
 
-.itemMusic h1, .itemMusic p {
+.itemMusic h1,
+.itemMusic p {
   margin: 1rem;
 }
 
@@ -311,6 +331,82 @@ a label {
 }
 
 @media screen and (max-width: 900px) {
+  .nav {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 0 0 100px 100px;
+    z-index: -555;
+  }
+  .nav .logo {
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+    color: #9371db;
+    margin-top: 2rem;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav .menu {
+    margin-right: 6rem;
+    display: block;
+    color: #9371db;
+    font-size: 2rem;
+  }
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300%;
+    width: 50%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  .mobile-menu .close {
+    color: #9371db;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+  }
+  .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 8rem;
+    list-style-type: none;
+    gap: 4rem;
+    z-index: 999;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+  }
+  .mobile-menu ul a {
+    text-decoration: none;
+    color: #9371db;
+  }
   .personal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -333,13 +429,14 @@ a label {
   }
   .personal .item0 h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .personal .item0 p {
     color: #78869b;
     font-weight: 500;
   }
-  .personal .item0 h1, .personal .item0 p {
+  .personal .item0 h1,
+  .personal .item0 p {
     margin: 1rem;
   }
   .personal .item {
@@ -349,13 +446,14 @@ a label {
   }
   .personal .item h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .personal .item p {
     color: #78869b;
     font-weight: 500;
   }
-  .personal .item h1, .personal .item p {
+  .personal .item h1,
+  .personal .item p {
     margin: 1rem;
   }
   .itemMusic {
@@ -365,13 +463,14 @@ a label {
   }
   .itemMusic h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .itemMusic p {
     color: #78869b;
     font-weight: 500;
   }
-  .itemMusic h1, .itemMusic p {
+  .itemMusic h1,
+  .itemMusic p {
     margin: 1rem;
   }
   .itemMusic .spotify {
@@ -385,6 +484,9 @@ a label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .itemMusic .spotify iframe {
+    width: 20%;
   }
   .programming {
     display: -webkit-box;
@@ -409,13 +511,14 @@ a label {
   }
   .programming .item0 h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .programming .item0 p {
     color: #78869b;
     font-weight: 500;
   }
-  .programming .item0 h1, .programming .item0 p {
+  .programming .item0 h1,
+  .programming .item0 p {
     margin: 1rem;
   }
   .programming .item {
@@ -425,13 +528,14 @@ a label {
   }
   .programming .item h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .programming .item p {
     color: #78869b;
     font-weight: 500;
   }
-  .programming .item h1, .programming .item p {
+  .programming .item h1,
+  .programming .item p {
     margin: 1rem;
   }
   .itemMusic {
@@ -441,13 +545,14 @@ a label {
   }
   .itemMusic h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .itemMusic p {
     color: #78869b;
     font-weight: 500;
   }
-  .itemMusic h1, .itemMusic p {
+  .itemMusic h1,
+  .itemMusic p {
     margin: 1rem;
   }
   .itemMusic .spotify {
@@ -465,6 +570,53 @@ a label {
 }
 
 @media screen and (max-width: 600px) {
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300%;
+    width: 50%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+  }
+  .mobile-menu .close {
+    color: #9371db;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 8rem;
+    list-style-type: none;
+    gap: 4rem;
+    z-index: 999;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 500;
+  }
+  .mobile-menu ul a {
+    text-decoration: none;
+    color: #9371db;
+  }
   .personal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -487,13 +639,14 @@ a label {
   }
   .personal .item0 h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .personal .item0 p {
     color: #78869b;
     font-weight: 500;
   }
-  .personal .item0 h1, .personal .item0 p {
+  .personal .item0 h1,
+  .personal .item0 p {
     margin: 1rem;
   }
   .personal .item {
@@ -503,13 +656,14 @@ a label {
   }
   .personal .item h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .personal .item p {
     color: #78869b;
     font-weight: 500;
   }
-  .personal .item h1, .personal .item p {
+  .personal .item h1,
+  .personal .item p {
     margin: 1rem;
   }
   .itemMusic {
@@ -519,13 +673,14 @@ a label {
   }
   .itemMusic h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .itemMusic p {
     color: #78869b;
     font-weight: 500;
   }
-  .itemMusic h1, .itemMusic p {
+  .itemMusic h1,
+  .itemMusic p {
     margin: 1rem;
   }
   .itemMusic .spotify {
@@ -539,6 +694,9 @@ a label {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .itemMusic .spotify iframe {
+    width: 100%;
   }
   .programming {
     display: -webkit-box;
@@ -563,13 +721,14 @@ a label {
   }
   .programming .item0 h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .programming .item0 p {
     color: #78869b;
     font-weight: 500;
   }
-  .programming .item0 h1, .programming .item0 p {
+  .programming .item0 h1,
+  .programming .item0 p {
     margin: 1rem;
   }
   .programming .item {
@@ -579,13 +738,14 @@ a label {
   }
   .programming .item h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .programming .item p {
     color: #78869b;
     font-weight: 500;
   }
-  .programming .item h1, .programming .item p {
+  .programming .item h1,
+  .programming .item p {
     margin: 1rem;
   }
   .itemMusic {
@@ -595,13 +755,14 @@ a label {
   }
   .itemMusic h1 {
     text-transform: uppercase;
-    color: #9371DB;
+    color: #9371db;
   }
   .itemMusic p {
     color: #78869b;
     font-weight: 500;
   }
-  .itemMusic h1, .itemMusic p {
+  .itemMusic h1,
+  .itemMusic p {
     margin: 1rem;
   }
   .itemMusic .spotify {
@@ -633,7 +794,7 @@ a label {
   .nav .logo {
     margin-left: 4rem;
     margin-bottom: 2rem;
-    color: #9371DB;
+    color: #9371db;
     margin-top: 2rem;
   }
   .nav a {
